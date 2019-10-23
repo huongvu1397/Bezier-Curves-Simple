@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.example.beziercurvesh.RallyLineGraphChart
+        android:id="@+id/rallyLine"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:curveTopMargin="24dp"
+        app:barColor="@color/color_on_surface_20"
+        app:curveFillColor="#0f0"
+        app:curveBorderColor="@color/rally_dark_green"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.beziercurvesh.RallyLineGraphChartExample01
+        android:id="@+id/rallyLineE01"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:curveTopMargin="24dp"
+        app:barColor="@color/color_on_surface_20"
+        app:curveFillColor="@android:color/transparent"
+        app:curveBorderColor="@android:color/holo_red_dark"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
